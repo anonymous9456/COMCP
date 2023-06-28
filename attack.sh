@@ -1,0 +1,16 @@
+python main.py \
+    --log 0 \
+    --device cuda:0 \
+    --recipe ga \
+    --dataset pheme \
+    --classifier bert-base-cased \
+    --target_instance_index 2 \
+    --batch_size 64 \
+    --poisonkey 1-0 \
+    --select_base use_closest_base \
+    --add_num 1 \
+    --budget 1 \
+    --ger 200 \
+    --pos_dimension 3 \
+    --individual_num 200 \
+    --mutate_prob 1 
